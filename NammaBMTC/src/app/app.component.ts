@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+declare var getData: any;
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NammaBMTC';
+
+  buttonAction(){
+    return getData();
+  }
+
 }
