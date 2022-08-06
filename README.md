@@ -12,3 +12,23 @@ From the BMTC operators’ perspective, it utilizes people movement information 
 # Data Pipeline
 
 ![screenshot](https://raw.githubusercontent.com/AshwinKumar-V/NammaBMTC/main/data%20pipeline%20namma%20bmtc.jpg?token=GHSAT0AAAAAABWFTSC4UHHYUFJCIAYOJFPQYXOIC5A)
+
+
+Features:
+Blockchain
+The proposed Blockchain system would collect data such as ‘Station Name,’ ‘The total number of commuters entering and existing,’ ‘Capacity of the bus,’ ‘Bus type,’ and ‘Timestamp’ from the Electronic Ticketing Machine used by conductors and store the data in the smart contract. 
+This data is securely stored in the public Ethereum network and is used for further inference and analysis. 
+The citizens would be given READ access to the public Ethereum network so that public transport information can be transparent.
+The deployer, i.e., the BMTC operator would be able to add or remove Electronic Ticketing Machine (ETM) addresses that can write the data to the smart contract.
+Admin interface
+View statistical visualization of bus crowds during various times of the day, on multiple routes, and in different classes of buses for better transit traffic management.
+View predictive analysis on commuter details based on historical data on a time series.
+Detect any anomalies in the behavior of the commuter pattern from specific endpoints (bus stations) using a well-trained Neural Network (LSTM -RNN).
+Commuter interface
+Track bus location, seat availability, and estimated arrival time for all buses on the commute route.
+View statistical visualization of bus crowds during various times of the day, on multiple routes, and in different classes of buses for better trip planning.
+
+Tech Stack:
+Frontend: Angular12 (JavaScript)
+Data analysis and Prediction: Django server (Python)
+Blockchain: Smart Contracts (Solidity), Metamask, Ethereum
