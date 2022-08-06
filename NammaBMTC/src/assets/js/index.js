@@ -11,7 +11,10 @@ var myAccount;
 //function to get all data from blockchain
 function getData(){
   contract.methods.getData().call()
-  .then(result => console.log(result));
+  .then(result => {
+    console.log(result);
+    return(result)
+  });
 }
 
 //function to put data on blockchain---------------------------------
@@ -37,18 +40,20 @@ async function putBusData(text) {
   let result = await window.contract.methods.publishData(text).send({ from: account });
 }
 
-async function addETMData(text) {
+async function addETMData(address, text) {
   await loadWeb3();
   window.contract = await loadContract();
   const account = await getCurrentAccount();
-  let result = await window.contract.methods.publishData(text).send({ from: account });
+  new_address = web3.utils.toChecksumAddress(address);
+  let result = await window.contract.methods.addEtm(new_address, text).send({ from: account });
 }
 
-async function removeETMData(text) {
+async function removeETMData(address) {
   await loadWeb3();
   window.contract = await loadContract();
   const account = await getCurrentAccount();
-  let result = await window.contract.methods.publishData(text).send({ from: account });
+  new_address = web3.utils.toChecksumAddress(address);
+  let result = await window.contract.methods.removeConductors(new_address).send({ from: account });
 }
 
 

@@ -7,7 +7,8 @@ import { ConductorComponent } from './conductor/conductor.component';
 import { UsermapComponent } from './usermap/usermap.component';
 import { UseranalysisComponent } from './useranalysis/useranalysis.component';
 import { AdminanalysisComponent } from './adminanalysis/adminanalysis.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminAddETMComponent } from './admin-add-etm/admin-add-etm.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     ConductorComponent,
     UsermapComponent,
     UseranalysisComponent,
-    AdminanalysisComponent
+    AdminanalysisComponent,
+    AdminAddETMComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

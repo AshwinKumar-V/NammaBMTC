@@ -1,1 +1,41 @@
-<p>admin-add-etm works!</p>
+<div>
+  <div class="conductor_container">
+    <div class="conductor_title">
+      <h3>Good Morning Admin</h3>
+    </div>
+    <div class="conductor_form" [formGroup]="addEtmForm">
+      <div class="left">
+        <form>
+          <h4>Add ETM Address</h4>
+          <div class="mb-3 field1">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="address" formControlName="Address">
+          </div>
+          <div class="mb-3 field1">
+            <label for="busreg" class="form-label">Bus Registration Number</label>
+            <input type="text" class="form-control" name="busreg" id="busreg" formControlName="BusReg">
+          </div>
+          <div class="mb-3 field1">
+            <label for="busroute" class="form-label">Bus Route</label>
+            <input type="text" class="form-control" name="busroute" id="busroute" formControlName="BusRoute">
+          </div>
+          <div class="mb-3 field1">
+            <label for="maxcapacity" class="form-label">Max Capacity</label>
+            <input type="number" class="form-control" name="maxcapacity" id="maxcapacity" formControlName="MaxCapacity">
+          </div>
+          <button type="button" class="btn btn-primary" (click)="submitData(addEtmForm.value)">Submit</button>
+        </form>
+      </div>
+      <div class="right">
+        <form>
+          <h4>Remove ETM Address</h4>
+          <div class="mb-3 field1">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="address" formControlName="Address">
+          </div>
+          <button type="button" class="btn btn-primary" (click)="removeData(addEtmForm.value.Address)">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
