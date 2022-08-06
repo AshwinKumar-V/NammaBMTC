@@ -9,4 +9,5 @@ The primary aim of the proposed project is to extend Bangalore Metropolitan Tran
 The proposed project involves a web application backed by blockchain to let users (commuters) know the availability of BMTC buses on their route, their location, seating availability, and an estimated arrival time that helps them plan their trip. 
 From the BMTC operators’ perspective, it utilizes people movement information to perform data analysis by running a predictive algorithm that will allow operators to understand the transit traffic through the busiest routes and during peak hours. This will subsequently help BMTC to make better bus schedules and allocate resources accordingly.
 
+<br/>
 ![screenshot](https://raw.githubusercontent.com/AshwinKumar-V/NammaBMTC/main/data%20pipeline%20namma%20bmtc.jpg?token=GHSAT0AAAAAABWFTSC4UHHYUFJCIAYOJFPQYXOIC5A)
