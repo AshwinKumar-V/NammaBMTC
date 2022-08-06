@@ -4,46 +4,39 @@
       <h3>Enter Ticket Details</h3>
       <h3>Summary</h3>
     </div>
-    <div class="conductor_form">
+    <div class="conductor_form" [formGroup]="etmForm">
       <div class="left">
         <form>
           <div class="mb-3 field1">
-            <label for="source" class="form-label">Source</label>
-            <input type="text" class="form-control" name="source" id="source">
+            <label for="source" class="form-label">Current Station</label>
+            <select id="source" formControlName="Stop" class="form-control">
+              <option *ngFor="let station of stations"  [value]="station">{{station}}</option>
+            </select>
           </div>
           <div class="mb-3 field1">
-            <label for="destination" class="form-label">Destination</label>
-            <input type="text" class="form-control" name="destination" id="source">
+            <label for="quantity" class="form-label">Number of Tickets</label>
+            <input type="number" class="form-control" name="quantity" id="source" formControlName="Count">
           </div>
-          <div class="mb-3 field1">
-            <label for="rate" class="form-label">Rate</label>
-            <input type="text" class="form-control" name="rate" id="source">
-          </div>
-          <div class="mb-3 field1">
-            <label for="quantity" class="form-label">Quantity</label>
-            <input type="text" class="form-control" name="quantity" id="source">
-          </div>
-          <button type="button" class="btn btn-primary">Submit</button>
         </form>
       </div>
       <div class="right">
         <div class="field1">
-          <p>Source</p>
-          <p>{{source}}</p>
+          <p>Stop</p>
+          <p>{{etmForm.value.Stop}}</p>
         </div>
         <div class="field1">
-          <p>Destination</p>
-          <p>{{destination}}</p>
+          <p>TimeStamp</p>
+          <p>{{etmForm.value.TimeStamp}}</p>
         </div>
         <div class="field1">
-          <p>Rate</p>
-          <p>{{rate}}</p>
+          <p>Date</p>
+          <p>{{etmForm.value.Date}}</p>
         </div>
         <div class="field1">
-          <p>Quantity</p>
-          <p>{{quantity}}</p>
+          <p>Count</p>
+          <p>{{etmForm.value.Count}}</p>
         </div>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" (click)="submitData(etmForm.value)">Submit</button>
       </div>
     </div>
   </div>

@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { ConductorComponent } from './conductor/conductor.component';
 import { UsermapComponent } from './usermap/usermap.component';
 import { UseranalysisComponent } from './useranalysis/useranalysis.component';
+import { AdminanalysisComponent } from './adminanalysis/adminanalysis.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConductorComponent,
     UsermapComponent,
-    UseranalysisComponent
+    UseranalysisComponent,
+    AdminanalysisComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
