@@ -35,5 +35,5 @@ Blockchain
 - Data analysis and Prediction: Django server (Python)
 - Blockchain: Smart Contracts (Solidity), Metamask, Ethereum
 
-# Click 
-<a href = "https://drive.google.com/file/d/1fcF3hRcDX28cj9xP5U6W7xbPdvqb4xRY/view?usp=sharing">heredemo</a> for demo!
+# Demo
+Click <a href = "https://drive.google.com/file/d/1fcF3hRcDX28cj9xP5U6W7xbPdvqb4xRY/view?usp=sharing">here</a> for demo!
