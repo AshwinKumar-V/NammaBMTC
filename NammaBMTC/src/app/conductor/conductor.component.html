@@ -1,0 +1,50 @@
+<div>
+  <div class="conductor_container">
+    <div class="conductor_title">
+      <h3>Enter Ticket Details</h3>
+      <h3>Summary</h3>
+    </div>
+    <div class="conductor_form">
+      <div class="left">
+        <form>
+          <div class="mb-3 field1">
+            <label for="source" class="form-label">Source</label>
+            <input type="text" class="form-control" name="source" id="source">
+          </div>
+          <div class="mb-3 field1">
+            <label for="destination" class="form-label">Destination</label>
+            <input type="text" class="form-control" name="destination" id="source">
+          </div>
+          <div class="mb-3 field1">
+            <label for="rate" class="form-label">Rate</label>
+            <input type="text" class="form-control" name="rate" id="source">
+          </div>
+          <div class="mb-3 field1">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="text" class="form-control" name="quantity" id="source">
+          </div>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="field1">
+          <p>Source</p>
+          <p>{{source}}</p>
+        </div>
+        <div class="field1">
+          <p>Destination</p>
+          <p>{{destination}}</p>
+        </div>
+        <div class="field1">
+          <p>Rate</p>
+          <p>{{rate}}</p>
+        </div>
+        <div class="field1">
+          <p>Quantity</p>
+          <p>{{quantity}}</p>
+        </div>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

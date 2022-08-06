@@ -1,0 +1,32 @@
+.conductor_container{
+  background-color: #e3e3e3;
+  margin: 10% 5% 5%;
+  border-radius: 1rem;
+  z-index: 3;
+}
+
+.conductor_title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .1rem solid #000000;
+  padding: 1.5% 3%;
+}
+
+.conductor_form{
+  display: flex;
+}
+
+.conductor_form .left{
+  width: 65%;
+  padding: 3% 3% 5%;
+  border-right: .1rem solid #000000;
+}
+
+.conductor_form .right{
+  width: 35%;
+  padding: 3% 3% 5%;
+}
+
+.form-control{
+  width: 60%;
+}
