@@ -1,0 +1,49 @@
+[
+{
+  "BusReg" : "KA01BH4562",
+  "BusRoute" : "365",
+  "MaxCapacity" : "60",
+  "Address" : "0x09C57A419978cBD8cDB627D6333C0905fe4c030f"
+},
+{
+  "BusReg" : "KA56JK7890",
+  "BusRoute" : "360",
+  "MaxCapacity" : "60",
+  "Address" : "0x0972385b955171739DBafD4c744768E3674A9639"
+},
+{
+  "BusReg" : "KA03TH5432",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x090F2102b4DEfDf170A0A676707F741f0eA55B28"
+},
+{
+  "BusReg" : "KA05TG7823",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x09D127F67b3dF94EFAFA0fBcF2b6c260EAD66be2"
+},
+{
+  "BusReg" : "KA89RF8973",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x0905248a646204220a9154b8fc666568E1BAc7a7"
+},
+{
+  "BusReg" : "KA09GH7893",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x09F42d61348BaD63662e89e799C26273fa0283cD"
+},
+{
+  "BusReg" : "KA89PL7632",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x09c4275D939cD638083FeBaD7314ca8E4509E579"
+},
+{
+  "BusReg" : "KA06YH5623",
+  "BusRoute" : "201",
+  "MaxCapacity" : "60",
+  "Address" : "0x09f9b1CDDc965d9d53095C71Ef3F5985FdaEd3F8"
+}]
