@@ -10,6 +10,8 @@ declare var getData: any;
 })
 export class UsermapComponent implements OnInit {
 
+  allData: any;
+
   constructor(private map: MapService) { }
 
   ngOnInit(): void {
@@ -22,9 +24,8 @@ export class UsermapComponent implements OnInit {
   }
 
   async getData2(){
-    let x =  await getData();
-    console.log(x);
-    return x;
+    this.allData =  await getData();
+    console.log("done");
   }
 
 
