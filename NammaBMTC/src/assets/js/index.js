@@ -13,7 +13,7 @@ function getData(){
   contract.methods.getData().call()
   .then(result => {
     console.log(result);
-    return(result)
+    return result;
   });
 }
 

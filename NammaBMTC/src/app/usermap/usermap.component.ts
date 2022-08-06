@@ -15,18 +15,16 @@ export class UsermapComponent implements OnInit {
   constructor(private map: MapService) { }
 
   ngOnInit(): void {
-    this.getData2();
+    this.map.buildMap()
+    this.allData=  getData();
+    setTimeout(() => {
+      console.log(this.allData);
+    }, 2000);
+
     // var commuterData = allData[0];
     // var busData = allData[1];
     // console.log(commuterData);
     // console.log(busData);
-    this.map.buildMap()
   }
-
-  async getData2(){
-    this.allData =  await getData();
-    console.log("done");
-  }
-
 
 }
