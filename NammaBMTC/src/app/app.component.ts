@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 declare var getData: any;
+declare var putData: any;
+declare var getAccounts: any;
 
 
 @Component({
@@ -10,8 +12,16 @@ declare var getData: any;
 export class AppComponent {
   title = 'NammaBMTC';
 
-  buttonAction(){
+  mGetData(){
     return getData();
+  }
+
+  mPutData(){
+    return putData();
+  }
+
+  mGetAccounts(){
+    return getAccounts();
   }
 
 }
