@@ -1,2 +1,18 @@
 /* Bootstrap 5 */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+  font-family: 'Nunito';
+}
+
+.field1{
+  display: flex;
+  justify-content: space-between;
+}
+
+#map {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
