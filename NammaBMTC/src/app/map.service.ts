@@ -7,8 +7,8 @@ providedIn: 'root'
 export class MapService {
 map:any;
 style = 'mapbox://styles/mapbox/streets-v11';
-lat = 45.899977;
-lng = 6.172652;
+lat = 12.9715987;
+lng = 77.5945627;
 zoom = 12
 constructor() {
   (mapboxgl as any).accessToken = environment.mapbox.accessToken;
